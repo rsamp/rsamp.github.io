@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>OsmoVirus</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="assets/osmos.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+  <body>
+    <canvas></canvas>
+
+    <script type="application/javascript" src="vendor/keymaster.js"></script>
+
+    <script type="application/javascript" src="lib/util.js"></script>
+    <script type="application/javascript" src="lib/movingObject.js"></script>
+    <script type="application/javascript" src="lib/cell.js"></script>
+    <script type="application/javascript" src="lib/virus.js"></script>
+    <script type="application/javascript" src="lib/playerCell.js"></script>
+    <script type="application/javascript" src="lib/game.js"></script>
+    <script type="application/javascript" src="lib/gameView.js"></script>
+
+    <script type="application/javascript">
+      (function () {
+        var canvasEl = document.getElementsByTagName("canvas")[0];
+        canvasEl.width = Osmos.Game.DIM_X;
+        canvasEl.height = Osmos.Game.DIM_Y;
+        var ctx = canvasEl.getContext("2d");
+        new Osmos.GameView(ctx).welcome();
+      })();
+    </script>
+  </body>
+</html>
