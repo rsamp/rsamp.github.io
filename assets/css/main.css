@@ -109,6 +109,9 @@
 			width: 1200px;
 		}
 
+		.live-button, .github-button {
+			bottom: 35px;
+		}
 	}
 
 	@media screen and (min-width: 737px) and (max-width: 1200px) {
@@ -135,6 +138,9 @@
 			width: 960px;
 		}
 
+		.live-button, .github-button {
+			bottom: 30px;
+		}
 	}
 
 	@media screen and (max-width: 736px) {
@@ -161,6 +167,13 @@
 			width: 100% !important;
 		}
 
+		.live-button, .github-button {
+			bottom: 30px;
+		}
+
+		.project {
+			padding: 10px !important;
+		}
 	}
 
 /* Grid */
@@ -1095,9 +1108,9 @@
 		text-decoration: underline;
 	}
 
-		a:hover {
+		/*a:hover {
 			color: #43bff0 !important;
-		}
+		}*/
 
 		a img {
 			border: 0;
@@ -1617,7 +1630,7 @@
 
 		.wrapper.style3 {
 			background-color: #f4f4f4;
-			text-shadow: 1px 1px 0px #fff;
+			/*text-shadow: 1px 1px 0px #fff;*/
 		}
 
 		.wrapper.style4 {
@@ -2115,4 +2128,94 @@
 					display: block;
 				}
 
-	}
+
+}
+
+
+.skill {
+	width: 10%;
+	float: left;
+	margin-right: 1.11%;
+}
+
+.skill-image {
+	width: 100%;
+}
+
+.box:after {
+  content: ""; /* Empty content string */
+  display: block; /* Only block elements can clear */
+  clear: both;
+}
+
+/*.project-buttons {*/
+	/*display: block;*/
+	/*position: absolute;*/
+	/*margin: auto;*/
+	/*z-index: 1;*/
+	/*float: left;*/
+	/*width: 100%;*/
+/*}*/
+
+.project {
+	padding: 0px;
+}
+
+.project p {
+	padding-bottom: 35px;
+}
+
+.live-button, .github-button {
+	position: relative;
+	border: 1px solid #888;
+	padding: 5px;
+	display: block;
+	width: 50%;
+	float: left;
+	text-decoration: none;
+	text-shadow: 0;
+	color: #3e3e3e;
+}
+
+.github-button {
+	border-left: none;
+}
+
+.chess{
+	width: 100%;
+	border-left: 1px solid #888;
+}
+
+.social h4 {
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+/*.project-buttons .dark {
+	color: #3e3e3e;
+	border: 1px solid #3e3e3e;
+}*/
+
+/*
+.image:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.image:hover:after {
+    opacity:1;
+}
+
+a.github-button:hover .image:after {
+	opacity: 1;
+}
+
+.image:hover .project-buttons {
+	display: inline;
+}*/
