@@ -2162,7 +2162,9 @@
 }
 
 .project p {
-	padding-bottom: 35px;
+	padding-bottom: 0px;
+	position: relative;
+	bottom: 15px;
 }
 
 .live-button, .github-button {
@@ -2191,12 +2193,26 @@
 	margin-top: 10px;
 }
 
+.tech-image {
+	/*height: 50%;*/
+	width: 15%;
+	padding-top: 15px;
+}
+
+.project h3 {
+	position: relative;
+	bottom: 20px;
+	margin-bottom: 0px;
+}
+
 /*.project-buttons .dark {
 	color: #3e3e3e;
 	border: 1px solid #3e3e3e;
 }*/
+/*.techs-used {
+	display: inline;
+}
 
-/*
 .image:after {
     content:'\A';
     position:absolute;
@@ -2216,6 +2232,6 @@ a.github-button:hover .image:after {
 	opacity: 1;
 }
 
-.image:hover .project-buttons {
+.image:hover .techs-used {
 	display: inline;
 }*/
