@@ -1487,7 +1487,7 @@
 				}
 
 				ul.social li a.fa-linkedin {
-					background-color: #006599;
+					background-color: #FAFAFA;
 				}
 
 				ul.social li a.fa-tumblr {
@@ -2201,8 +2201,8 @@
 
 .project h3 {
 	position: relative;
-	bottom: 20px;
-	margin-bottom: 0px;
+	bottom: 15px;
+	margin-bottom: 10px;
 }
 
 /*.project-buttons .dark {
