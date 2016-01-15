@@ -23,6 +23,20 @@
 		  ga('send', 'pageview');
 
 		</script>
+		<!-- <script>
+			/**
+			* Function that tracks a click on an outbound link in Google Analytics.
+			* This function takes a valid URL string as an argument, and uses that URL string
+			* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+			* using 'navigator.sendBeacon' in browser that support it.
+			*/
+			var trackOutboundLink = function(url) {
+			   ga('send', 'event', 'outbound', 'click', url, {
+			     'transport': 'beacon',
+			     'hitCallback': function(){document.location = url;}
+			   });
+			}
+		</script> -->
 	</head>
 	<body>
 
@@ -57,7 +71,6 @@
 								for various software, I decided to pursue a career in which
 								I could create the technologies that other people use.
 							</h5>
-							<!-- <a href="#work" class="button big scrolly">Learn about what I do</a> -->
 						</div>
 					</div>
 				</article>
@@ -68,7 +81,6 @@
 				<article id="work">
 					<header>
 						<h2>Skills and Technologies</h2>
-						<!-- <p>Odio turpis amet sed consequat eget posuere consequat.</p> -->
 					</header>
 					<div class="container">
 						<div class="row">
@@ -124,29 +136,10 @@
 										<br>
 										<label for="">Git</label>
 									</span>
-									<!-- <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p> -->
 								</section>
 							</div>
-							<!-- <div class="4u 12u(mobile)">
-								<section class="box style1">
-									<span class="icon featured fa-camera-retro"></span>
-									<h3>Lorem dolor tempus</h3>
-									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-								</section>
-							</div>
-							<div class="4u 12u(mobile)">
-								<section class="box style1">
-									<span class="icon featured fa-thumbs-o-up"></span>
-									<h3>Feugiat posuere</h3>
-									<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
-								</section>
-							</div> -->
 						</div>
 					</div>
-					<!-- <footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#portfolio" class="button big scrolly">See some of my recent work</a>
-					</footer> -->
 				</article>
 			</div>
 
@@ -155,17 +148,16 @@
 				<article id="portfolio">
 					<header>
 						<h2>Projects</h2>
-						<!-- <p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat lorem ipsum dolore.</p> -->
 					</header>
 					<div class="container">
 						<div class="row">
 							<div class="4u 12u(mobile)">
 								<article class="box project">
-									<a target="_blank" href="http://www.huskynom.com" class="project image featured"><img src="images/HuskyNOM.png" alt="" /></a>
+									<a target="_blank" href="http://www.huskynom.com" class="project image featured" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, HuskyNOM’, ‘Image Link’]);"><img src="images/HuskyNOM.png" alt="" /></a>
 
 									<div class="project-buttons">
-										<a class="live-button" target="_blank" href="http://www.huskynom.com">Live Demo</a>
-										<a class="github-button" target="_blank" href="https://github.com/rsamp/HuskyNOM" >GitHub</a>
+										<a class="live-button" target="_blank" href="http://www.huskynom.com" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, ‘HuskyNOM’, ‘Live Link’]);">Live Demo</a>
+										<a class="github-button" target="_blank" href="https://github.com/rsamp/HuskyNOM" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, ‘HuskyNOM’, ‘GitHub Link’]);">GitHub</a>
 									</div>
 									<h3>HuskyNOM.com</h3>
 									<p>
@@ -180,10 +172,10 @@
 							</div>
 							<div class="4u 12u(mobile)">
 								<article class="box project">
-									<a target="_blank" href="./OsmoVirus/osmovirus.html" class="project image featured"><img src="images/OsmoVirus.png" alt="" /></a>
+									<a target="_blank" href="./OsmoVirus/osmovirus.html" class="project image featured" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, OsmoVirus’, ‘Image Link’]);"><img src="images/OsmoVirus.png" alt="" /></a>
 									<div class="project-buttons">
-										<a class="live-button" target="_blank" href="./OsmoVirus/osmovirus.html">Live Demo</a>
-										<a class="github-button" target="_blank" href="https://github.com/rsamp/OsmoVirus" >GitHub</a>
+										<a class="live-button" target="_blank" href="./OsmoVirus/osmovirus.html" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, OsmoVirus, ‘Live Link’]);">Live Demo</a>
+										<a class="github-button" target="_blank" href="https://github.com/rsamp/OsmoVirus" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, OsmoVirus, ‘GitHub Link’]);">GitHub</a>
 									</div>
 									<h3>OsmoVirus</h3>
 									<p>
@@ -196,9 +188,9 @@
 							</div>
 							<div class="4u 12u(mobile)">
 								<article class="box project">
-									<a target="_blank" href="https://github.com/rsamp/chess" class="project image featured"><img src="images/chessLogo2.png" alt="" /></a>
+									<a target="_blank" href="https://github.com/rsamp/chess" class="project image featured" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, Chess, ‘Image Link’]);"><img src="images/chessLogo2.png" alt="" /></a>
 									<div class="project-buttons">
-										<a class="github-button chess" target="_blank" href="https://github.com/rsamp/chess">GitHub</a>
+										<a class="github-button chess" target="_blank" href="https://github.com/rsamp/chess" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, Chess, ‘GitHub Link’]);">GitHub</a>
 									</div>
 									<h3>Chess</h3>
 									<p>
@@ -268,11 +260,11 @@
 								<hr />
 								<ul class="social">
 									<h4>Find me on:</h4>
-									<li><a target="_blank" href="https://www.linkedin.com/in/ryansamp" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a target="_blank" href="http://www.github.com/rsamp" class="icon fa-github"><span class="label">Github</span></a></li>
-									<li><a target="_blank" href="mailto:rsamp@ryansamp.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a target="_blank" href="https://www.linkedin.com/in/ryansamp" class="icon fa-linkedin" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, ‘LinkedIn’, ‘LinkedIn Link’]);"><span class="label">LinkedIn</span></a></li>
+									<li><a target="_blank" href="http://www.github.com/rsamp" class="icon fa-github" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, ‘GitHub’, ‘GitHub Link’]);"><span class="label">Github</span></a></li>
+									<li><a target="_blank" href="mailto:rsamp@ryansamp.com" class="icon fa-envelope" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, Email’, ‘Email Link’]);"><span class="label">Email</span></a></li>
 									<h4>Or download my resume:</h4>
-									<li><a target="_blank" href="./assets/Resume.pdf" class="icon fa-file-text"><span class="label">Email</span></a></li>
+									<li><a target="_blank" href="./assets/Resume.pdf" class="icon fa-file-text" onclick="_gaq.push([‘_trackEvent’, ‘External Link’, ‘Resume’, ‘Resume Link’]);"><span class="label">Email</span></a></li>
 								</ul>
 								<hr />
 							</div>

@@ -2177,6 +2177,7 @@
 	text-decoration: none;
 	text-shadow: 0;
 	color: #3e3e3e;
+	z-index: 1;
 }
 
 .github-button {
