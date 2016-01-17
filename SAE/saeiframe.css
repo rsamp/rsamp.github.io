@@ -1,0 +1,133 @@
+body
+{
+	margin: auto auto;
+	font-family: serif;
+}
+
+.text
+{
+	text-align: justify;
+	margin: auto auto;
+	width: 582px;
+	clear: right;
+}
+
+#pics
+{
+	text-align: justify;
+	margin: auto auto;
+	width: 850px;
+}
+
+#saelogo
+{
+	margin: auto auto;
+	width: 500px;
+}
+
+#calendar
+{
+	width: 800px;
+	margin: auto auto;
+}
+
+#history, #creed, #alumni, #presidents, #awards
+{
+	position: fixed;
+	margin-left: 35px;
+}
+
+#history
+{
+	margin-top: 40px;
+}
+
+#creed
+{
+	margin-top: 45px;
+}
+
+#alumni
+{
+	margin-top: 50px;
+}
+
+#presidents
+{
+	margin-top: 55px;
+}
+
+#awards
+{
+	margin-top: 60px;
+}
+
+#tgvid
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#fb
+{
+	padding: 6px;
+	padding-bottom: 2px;
+}
+
+.right
+{
+	text-align: right;
+}
+
+legend
+{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+table
+{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 3px;
+}
+
+tr
+{
+	width: 100%;
+}
+
+th
+{
+	text-align: center;
+}
+
+td
+{
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+p
+{
+	text-align: justify;
+}
+
+h1
+{
+	text-align: center;
+	color: #CFB53B;
+}
+
+img
+{
+	border: none;
+}
+
+.pic
+{
+	text-align: center;
+}

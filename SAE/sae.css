@@ -1,0 +1,68 @@
+body
+{
+	background-image: url(background4.JPG);
+	font-family: italic serif;
+}
+
+#top
+{
+	margin-top: 112px;
+}
+
+#title
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+}
+
+#navigation
+{
+	width: 502px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#aboutus, #rush, #pictures, #videos, #events, #brothers
+{
+	margin-top: 14px;
+	margin-bottom: 2px;
+	border: none;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#crest
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#middle
+{
+	background: url("middle.png") no-repeat;
+	background-position: center top;
+	clear: left;
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bottom
+{
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
+
+iframe
+{
+	clear: left;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+}
