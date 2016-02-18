@@ -109,7 +109,7 @@
 			width: 1200px;
 		}
 
-		.live-button, .github-button {
+		.live-button, .github-button, .demo-button{
 			bottom: 35px;
 		}
 	}
@@ -138,7 +138,7 @@
 			width: 960px;
 		}
 
-		.live-button, .github-button {
+		.live-button, .github-button, .demo-button {
 			bottom: 30px;
 		}
 	}
@@ -167,7 +167,7 @@
 			width: 100% !important;
 		}
 
-		.live-button, .github-button {
+		.live-button, .github-button, .demo-button {
 			bottom: 30px;
 		}
 
@@ -2167,7 +2167,7 @@
 	bottom: 15px;
 }
 
-.live-button, .github-button {
+.live-button, .github-button, .demo-button {
 	position: relative;
 	border: 1px solid #888;
 	padding: 5px;
@@ -2180,8 +2180,12 @@
 	z-index: 1;
 }
 
-.github-button {
+.github-button, .demo-button {
 	border-left: none;
+}
+
+.moodly {
+	width:33.33333%;
 }
 
 .chess{
